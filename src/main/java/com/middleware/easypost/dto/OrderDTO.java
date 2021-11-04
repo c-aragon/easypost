@@ -5,12 +5,12 @@ import javax.persistence.Column;
 public class OrderDTO {
 
 	private Long id;
-	private String order;
+	private String laOrden;
 	
-	public OrderDTO(Long id, String order) {
+	public OrderDTO(Long id, String laOrden) {
 		super();
 		this.id = id;
-		this.order = order;
+		this.laOrden = laOrden;
 	}
 
 	public Long getId() {
@@ -18,14 +18,14 @@ public class OrderDTO {
 	}
 
 	public String getOrder() {
-		return order;
+		return laOrden;
 	}
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public void setOrder(String order) {
-		this.order = order;
+	public void setOrder(String laOrden) {
+		this.laOrden = laOrden;
 	}
 }
