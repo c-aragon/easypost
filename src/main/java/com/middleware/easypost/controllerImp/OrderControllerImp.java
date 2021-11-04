@@ -7,7 +7,7 @@ import com.middleware.easypost.controller.OrderController;
 import com.middleware.easypost.dto.OrderDTO;
 
 @RestController
-@RequestMapping(path="order")
+@RequestMapping(path="orden")
 public class OrderControllerImp implements OrderController{
 
 	@Override
