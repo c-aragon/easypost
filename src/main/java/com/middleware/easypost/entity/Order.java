@@ -8,31 +8,31 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orden") //No puede tener order por conflicto con order de MySQL
 public class Order {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(length = 15)
-	private String order;
+	private String theOrder;
 	
-	public Order(Long id, String order) {
+	public Order(Long id, String theOrder) {
 		super();
 		this.id = id;
-		this.order = order;
+		this.theOrder = theOrder;
 	}
 	
 	public Long getId() {
 		return id;
 	}
 	public String getOrder() {
-		return order;
+		return theOrder;
 	}
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public void setOrder(String order) {
-		this.order = order;
+	public void setOrder(String theOrder) {
+		this.theOrder = theOrder;
 	}
 }
